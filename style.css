@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@font-face {
+    font-family: jeopardyFont;
+    src: url(font/Triumvirate\ Extra\ Compressed\ Regular.ttf);
+}
+
+body {
+    background-color: #010A78;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+}
+
+a {
+    color: #D7A04B;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+#gameTitle {
+    font-size: 3em;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    font-size: 2.5em;
+    font-family: "jeopardyFont";
+}
+
+.login table {
+    width: 50%;
+}
+
+caption {
+    margin-top: 1vw;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 1vw;
+    border: 5px solid black;
+    margin: 0;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #D7A04B;
+}
+
+td a:hover {
+    color: #997135;
+}
+
+.player_info {
+    width: 90vw;
+    margin-bottom: 1vw;
+}
+
+.player_info, .player_info div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    align-items: center;
+}
+
+.answered {
+    text-decoration: line-through;
+    color: rgb(83, 60, 27);
+}
+
+.question_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+label {
+    color: white;
+    font-size: 2.5em;
+}
+
+input {
+    padding: 1vw;
+    font-size: 2em;
+    margin-top: 2vw;
+    border-radius: 5px;
+}
+
+.button {
+    width: fit-content;
+    padding: 1vw;
+    font-size: 2em;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radioOptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.radioLabel {
+    width: 40vw;
+    padding: 0.8vw;
+    font-size: 1.8em;
+    border-radius: 2px;
+    margin-top: 1.5vw;
+    background-color: #D7A04B;
+    border: 5px solid #997135;
+    color: white;
+}
+
+.radioLabel:hover {
+    cursor: pointer;
+    background-color: #997135;
+}
+
+input[type="radio"]:checked + .radioLabel {
+    background-color: #997135;
+}
+
+input[type="submit"], .button {
+    background-color: #D7A04B;
+    border: 1px solid #D7A04B;
+    color: white;
+}
+
+input[type="submit"]:hover, a .button:hover {
+    background-color: #997135;
+    border-color: #997135;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.question_form input[type="submit"] {
+    width: 100%;
+}
+
+.timer-container {
+    width: 90vw;
+    overflow: hidden;
+    height: 20px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    top: 0vh;
+    margin-bottom: 3vw;
+}
+
+.timer-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timer-bar div {
+    width: 10%;
+    height: 100%;
+    background-color: #D7A04B;
+}
+.timer_1{
+    animation: fadeOut_1 2.22s forwards;
+}
+@keyframes fadeOut_1 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_2{
+    animation: fadeOut_2 4.44s forwards;
+}
+@keyframes fadeOut_2 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_3{
+    animation: fadeOut_3 6.66s forwards;
+}
+@keyframes fadeOut_3 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_4{
+    animation: fadeOut_4 8.88s forwards;
+}
+@keyframes fadeOut_4 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_5{
+    animation: fadeOut_1 10.00s forwards;
+}
+@keyframes fadeOut_5 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_6{
+    animation: fadeOut_1 8.88s forwards;
+}
+@keyframes fadeOut_6 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_7{
+    animation: fadeOut_1 6.66s forwards;
+}
+@keyframes fadeOut_7 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_8{
+    animation: fadeOut_8 4.44s forwards;
+}
+@keyframes fadeOut_8 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.timer_9{
+    animation: fadeOut_9 2.22s forwards;
+}
+@keyframes fadeOut_9 {
+    99% { opacity: 1; }
+    100% { opacity: 0; }
+}
